@@ -16,7 +16,7 @@ const expPino = require('express-pino-logger');
 
 var redisConnected = false;
 
-var redisHost = process.env.REDIS_HOST || 'redis'
+var redisHost = process.env.REDIS_CONNECT_SERVICE_HOST || 'redis'
 var catalogueHost = process.env.CATALOGUE_HOST || 'catalogue'
 
 const logger = pino({
