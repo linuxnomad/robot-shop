@@ -143,12 +143,6 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
-    # Uncomment to enable Instana EUM
-    # environment:
-      # INSTANA_EUM_KEY: <your eum key>
-      # INSTANA_EUM_REPORTING_URL: https://eum-us-west-2.instana.io
-      # INSTANA_EUM_REPORTING_URL: https://eum-eu-west-1.instana.io
-
 networks:
   robot-shop:
 
