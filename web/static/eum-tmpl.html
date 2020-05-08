@@ -1,4 +1,5 @@
 <!-- EUM include -->
+<!--
 <script>
   (function(i,s,o,g,r,a,m){i['InstanaEumObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,5 +9,18 @@
   ineum('reportingUrl', 'INSTANA_EUM_REPORTING_URL');
   ineum('page', 'splash.html');
 </script>
+-->
+<script charset='UTF-8'>
+window['adrum-start-time'] = new Date().getTime();
+(function(config){
+    config.appKey = 'APPD-EUM-KEY';
+    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+    config.beaconUrlHttp = 'http://geth-controller2033-ixdmxxa8.appd-sales.com:7001';
+    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+    config.xd = {enable : false};
+})(window['adrum-config'] || (window['adrum-config'] = {}));
+</script>
+<script src='//cdn.appdynamics.com/adrum/adrum-4.5.17.2890.js'></script>
 <!-- EUM include end -->
 
