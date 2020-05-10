@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
     <!--# include file="eum.html" -->
+    <script charset='UTF-8'>
+window['adrum-start-time'] = new Date().getTime();
+(function(config){
+    config.appKey = 'APPD-EUM-KEY';
+    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+    config.beaconUrlHttp = 'http://geth-controller2033-ixdmxxa8.appd-sales.com:7001';
+    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+    config.xd = {enable : false};
+})(window['adrum-config'] || (window['adrum-config'] = {}));
+    </script>
+<script src='//cdn.appdynamics.com/adrum/adrum-4.5.17.2890.js'></script>
     <title>Vincent's Robot Shop</title>
     <link rel="shortcut icon" type="image/png" href="/media/instana_icon_square.png"/>
     <style type="text/css">
